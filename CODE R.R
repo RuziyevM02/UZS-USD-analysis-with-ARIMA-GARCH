@@ -19,7 +19,7 @@ results <- map_dfr(dates, get_rate)
 #confirmation
 url <- "https://cbu.uz/en/arkhiv-kursov-valyut/json/all/2024-01-15/"
 test <- fromJSON(url)
-str(test)
+
 
 dates <- seq(as.Date("2015-01-01"), as.Date("2026-08-15"), by = "week")
 results <- map_dfr(dates, get_rate)
@@ -35,7 +35,7 @@ results_clean <- results %>%
   select(date,Rate) 
   
 head(results_clean, 5)
-str(results_clean)
+
 
 
          
