@@ -1,0 +1,1 @@
+# UZS-USD-analysis-with-ARIMA-GARCH
